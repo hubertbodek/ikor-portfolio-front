@@ -1,3 +1,9 @@
+const activeEnv = process.env.NODE_ENV || 'production';
+
+require('dotenv').config({
+	path: `.env.${activeEnv}`,
+});
+
 module.exports = {
 	siteMetadata: {
 		siteUrl: 'https://www.yourdomain.tld',
@@ -19,11 +25,7 @@ module.exports = {
 		{
 			resolve: `gatsby-source-strapi`,
 			options: {
-				apiURL: `${
-					process.env.NODE_ENV === 'development'
-						? 'http://localhost:1337'
-						: process.env.GATSBY_API_URL
-				}/api`,
+				apiURL: `${process.env.GATSBY_API_URL}/api`,
 				queryLimit: 1000, // Defaults to 100
 				collectionTypes: [`course`],
 			},
