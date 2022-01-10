@@ -24,7 +24,7 @@ const Welcome = () => {
 				alt='Igor'
 				placeholder='blurred'
 				layout='constrained'
-				className='w-64 sm:w-80 md:w-96 lg:w-[28rem] 2xl:w-[36rem] absolute bottom-0 -right-8'
+				className='w-64 sm:w-80 md:w-96 lg:w-[28rem] 2xl:w-[36rem] !absolute bottom-0 -right-8'
 			/>
 		</div>
 	);
