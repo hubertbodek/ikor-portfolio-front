@@ -15,7 +15,7 @@ const Navbar = () => {
 	return (
 		<Disclosure
 			as='nav'
-			className='absolute w-full h-30 top-0 bg-gradient-to-r sm:bg-white z-10'
+			className='absolute w-full h-30 top-0 bg-gradient-to-r z-50 text-primary-dark border-b border-b-gray-200/50 '
 		>
 			{({ open }) => (
 				<>
@@ -37,9 +37,14 @@ const Navbar = () => {
 									logo
 								</div>
 								<div className='hidden sm:block sm:ml-6'>
-									<div className='flex space-x-6 items-center'>
+									<div className='flex space-x-12 items-center'>
 										{navigation.map((item) => (
-											<Link key={item.name} to={item.href}>
+											<Link
+												key={item.name}
+												to={item.href}
+												className='md:text-lg lg:text-xl transition nav-link-animation'
+												activeClassName='text-secondary'
+											>
 												{item.name}
 											</Link>
 										))}
