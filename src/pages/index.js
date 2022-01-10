@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Welcome from '../components/Welcome';
 import Section from '../components/common/Section';
 import Example from '../components/Example';
