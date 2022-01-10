@@ -19,7 +19,11 @@ module.exports = {
 		{
 			resolve: `gatsby-source-strapi`,
 			options: {
-				apiURL: `http://localhost:1337/api`,
+				apiURL: `${
+					process.env.NODE_ENV === 'development'
+						? 'http://localhost:1337'
+						: process.env.GATSBY_API_URL
+				}/api`,
 				queryLimit: 1000, // Defaults to 100
 				collectionTypes: [`course`],
 			},
