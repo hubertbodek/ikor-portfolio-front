@@ -1,24 +1,25 @@
 import * as React from 'react';
 
 import Layout from '../components/Layout';
-import Welcome from '../components/Welcome';
+import Welcome from '../components/pages/main/Welcome';
 import Section from '../components/common/Section';
 import Example from '../components/Example';
+import HappyCustomers from '../components/pages/main/HappyCustomers';
 
 const IndexPage = () => (
 	<Layout>
 		{/* HERO */}
 		<Section
-			overlay='bg-gradient-to-tl from-transparent via-transparent to-primary-light opacity-50'
-			styles='h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[95vh] pt-20'
+			overlay='bg-gradient-to-tl from-transparent via-transparent to-secondary-light opacity-20'
+			styles='h-[65vh] sm:h-[70vh] md:h-[80vh] lg:h-[95vh] pt-20'
 		>
 			<Welcome />
 		</Section>
-		{/* COUNTER */}
-		<Section styles='h-[60vh] sm:h-[70vh] lg:h-[80vh] bg-gradient-to-r from-primary-light to-primary'>
-			<Example />
+		{/* HAPPY CUSTOMERS */}
+		<Section styles='h-[70vh] sm:h-[80vh] bg-gradient-to-r from-secondary-light to-secondary py-8'>
+			<HappyCustomers />
 		</Section>
-		<Section styles='h-[60vh] sm:h-[70vh] lg:h-[80vh] bg-gradient-to-r from-primary-light to-primary'>
+		<Section styles='h-[60vh] sm:h-[70vh] lg:h-[80vh] bg-gradient-to-r from-secondary-light to-secondary'>
 			<Example />
 		</Section>
 		{/* OPINIE */}

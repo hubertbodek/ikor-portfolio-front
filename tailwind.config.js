@@ -10,13 +10,14 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#219ebc',
-					light: '#8acae6',
-					dark: '#023047',
+					DEFAULT: '#0077b6',
+					light: '#0096c7',
+					dark: '#023e8a',
 				},
 				secondary: {
-					DEFAULT: '#fb8500',
-					light: '#ffb703',
+					DEFAULT: '#ff6d00',
+					light: '#ff8500',
+					dark: '#f55200',
 				},
 			},
 			fontFamily: {
