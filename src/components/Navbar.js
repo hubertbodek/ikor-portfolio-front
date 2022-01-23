@@ -16,7 +16,7 @@ const Navbar = () => {
 	return (
 		<Disclosure
 			as='nav'
-			className='sm:absolute w-full h-30 top-0 bg-gradient-to-br from-secondary-light to-secondary sm:bg-none z-50 text-primary-dark border-b border-b-gray-200/50 '
+			className='sm:absolute w-full h-30 top-0 bg-gradient-to-br from-primary-light to-primary/50 sm:bg-none z-50 text-black border-b border-b-gray-200/50 '
 		>
 			{({ open }) => (
 				<>
@@ -53,7 +53,7 @@ const Navbar = () => {
 												key={item.name}
 												to={item.href}
 												className='md:text-lg lg:text-xl transition nav-link-animation'
-												activeClassName='text-secondary'
+												activeClassName='text-primary'
 											>
 												{item.name}
 											</Link>

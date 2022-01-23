@@ -6,8 +6,10 @@ require('dotenv').config({
 
 module.exports = {
 	siteMetadata: {
-		siteUrl: 'https://www.yourdomain.tld',
+		siteUrl: 'https://www.ikor.pl',
 		title: 'Ikor',
+		description:
+			'Korepetycje online - Szkoła podstawowa, szkoła średnia. Przygotowania do egzaminów, sprawdzianów i kartkówek, pomoc w zadaniach domowych, ogólne przygotowanie matematyczne.',
 	},
 	plugins: [
 		'gatsby-plugin-image',
@@ -15,6 +17,12 @@ module.exports = {
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-postcss',
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				icon: 'src/images/logo/DK-brain.png',
+			},
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {

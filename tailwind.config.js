@@ -21,7 +21,7 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				josefin: ["'Josefin Sans', sans-serif"],
+				poppins: ["'Sora', sans-serif"],
 			},
 		},
 		variants: {},
